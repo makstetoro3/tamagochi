@@ -1,4 +1,4 @@
-function check_authorization() {
+function check_registration() {
     let inputs_is_not_empty = !empty_input('password', 'password_warning')
     inputs_is_not_empty &= !empty_input('login', 'login_warning')
     if (inputs_is_not_empty) {
