@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,20 @@
 </head>
 <body>
     <div id="registration_form">
-        <h2 class="hi_titile">create account</h2>
+        <h2 id="hi_titile">create account</h2>
         <div class="input">
             <h3 class="input_text">login:</h3>
-            <input type="text" id="login" name="login">
-            <div class="warning" id="login_warning">заполните поле для логина</div>
+            <input type="text" id="login" placeholder="login">
+            <div class="warning" id="login_warning">fill in the login input field</div>
+            <div class="warning" id="login_warning_2">login is already in use</div>
         </div>
         <div class="input">
             <h3 class="input_text">password:</h3>
-            <input type="password" id="password" name="password" >
-            <div class="warning" id="password_warning">заполните поле для пароля</div>
+            <input type="password" id="password" placeholder="password" >
+            <div class="warning" id="password_warning">fill in the password input field</div>
+            <div class="warning" id="password_warning_2">password is too easy</div>
         </div>
+        <div class="warning" id="other_warning"></div>
         <div id="buttons">
             <a id="authorization_link" href="../authorization/authorization.html">sign in?</a>
             <button id="registration" type="submit" onclick="check_registration()">create account</button>
