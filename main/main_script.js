@@ -1,4 +1,4 @@
 function exit_button() {
-    window.location.href="/index/index.html";
+    window.location.href="/exit/exit.html";
 }
 
